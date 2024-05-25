@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cottagecore_background"
+    tools:context=".EditSubscriptionActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etEditServiceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Servicio"
+        android:backgroundTint="#C9EFC7"
+        android:padding="10dp"
+        android:textColor="#4D7E3E"
+        android:textColorHint="#E8F6E4"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/etEditStartDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Inicio"
+        android:backgroundTint="#C9EFC7"
+        android:padding="10dp"
+        android:textColor="#4D7E3E"
+        android:textColorHint="#E8F6E4"
+        app:layout_constraintTop_toBottomOf="@id/etEditServiceName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/etEditEndDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Vencimiento"
+        android:backgroundTint="#C9EFC7"
+        android:padding="10dp"
+        android:textColor="#4D7E3E"
+        android:textColorHint="#E8F6E4"
+        app:layout_constraintTop_toBottomOf="@id/etEditStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/etEditMonthlyPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio Mensual"
+        android:backgroundTint="#C9EFC7"
+        android:padding="10dp"
+        android:textColor="#4D7E3E"
+        android:textColorHint="#E8F6E4"
+        app:layout_constraintTop_toBottomOf="@id/etEditEndDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/etEditPlatform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Plataforma (Netflix, Spotify, etc.)"
+        android:backgroundTint="#C9EFC7"
+        android:padding="10dp"
+        android:textColor="#4D7E3E"
+        android:textColorHint="#E8F6E4"
+        app:layout_constraintTop_toBottomOf="@id/etEditMonthlyPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveSubscription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Suscripción"
+        android:backgroundTint="#778d7a"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/etEditPlatform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_margin="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

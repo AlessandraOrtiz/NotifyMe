@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cottagecore_background"
+    android:padding="16dp"
+    tools:context=".AddSubscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etServiceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Servicio"
+            android:backgroundTint="#C9EFC7"
+            android:padding="10dp"
+            android:textColor="#4D7E3E"
+            android:textColorHint="#4D7E3E"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Inicio"
+            android:fontFamily="serif"
+            android:textColor="#394237"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPickStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha de Inicio"
+            android:backgroundTint="#778d7a"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Vencimiento"
+            android:fontFamily="serif"
+            android:textColor="#4D7E3E"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etMonthsDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duración en Meses"
+            android:backgroundTint="#C9EFC7"
+            android:padding="10dp"
+            android:textColor="#4D7E3E"
+            android:textColorHint="#DAEDDC"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etMonthlyPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio Mensual"
+            android:backgroundTint="#C9EFC7"
+            android:padding="10dp"
+            android:textColor="#4D7E3E"
+            android:textColorHint="#DAEDDC"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Plataforma (Netflix, Spotify, etc.)"
+            android:backgroundTint="#C9EFC7"
+            android:padding="10dp"
+            android:textColor="#4D7E3E"
+            android:textColorHint="#DAEDDC"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSaveSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Suscripción"
+            android:backgroundTint="#778d7a"
+            android:textColor="#ffffff"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
+

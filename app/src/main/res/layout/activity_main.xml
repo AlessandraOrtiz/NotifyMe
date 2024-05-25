@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cottagecore_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRecentSubscriptions"
+        android:layout_width="209dp"
+        android:layout_height="54dp"
+        android:fontFamily="serif"
+        android:text="Suscripciones Recientes"
+        android:textColor="#CCDAC8"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ListView
+        android:id="@+id/lvSubscriptions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#C9EFC7"
+        app:layout_constraintTop_toBottomOf="@id/tvRecentSubscriptions"
+        app:layout_constraintBottom_toTopOf="@id/btnAddSubscription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnAddSubscription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar Suscripción"
+        android:backgroundTint="#778d7a"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@id/btnViewExpenses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/btnViewExpenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Registro de Gastos"
+        android:backgroundTint="#778d7a"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/cottagecore_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#C9EFC7" /> <!-- Color de fondo suave -->
+    </item>
+    <item>
+        <bitmap android:src="@drawable/fondo" android:gravity="center" /> <!-- Imagen de fondo -->
+    </item>
+</layer-list>
